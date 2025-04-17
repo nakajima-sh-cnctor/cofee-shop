@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "recommendations": ["dbaeumer.vscode-eslint"],
+  "editor.tabSize": 2,
+  "eslint.useFlatConfig": true
+}
