@@ -6,7 +6,24 @@ import { createVuetify } from 'vuetify'
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
-    // ... your configuration
+    theme: {
+      defaultTheme: 'coffeeTheme',
+      themes: {
+        coffeeTheme: {
+          dark: false,
+          colors: {
+            primary: '#6F4E37', // 濃いコーヒー色
+            secondary: '#A67B5B', // ラテ色
+            accent: '#D2B48C', // カプチーノ色
+            error: '#B00020',
+            info: '#8D6E63', // 薄いコーヒー色
+            success: '#4CAF50',
+            warning: '#C9A66B', // ライトブラウン
+            background: '#EFEBE9', // 明るいベージュ
+          },
+        },
+      },
+    },
   })
   app.vueApp.use(vuetify)
 })
