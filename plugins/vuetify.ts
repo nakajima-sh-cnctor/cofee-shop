@@ -24,6 +24,30 @@ export default defineNuxtPlugin((app) => {
         },
       },
     },
+    defaults: {
+      VContainer: {
+        style: 'max-width: 600px',
+      },
+      VCardTitle: {
+        class: 'text-primary',
+      },
+      VTextField: {
+        color: 'primary',
+        variant: 'underlined',
+      },
+      VTextarea: {
+        color: 'primary',
+        variant: 'underlined',
+      },
+      VSelect: {
+        color: 'primary',
+        variant: 'underlined',
+      },
+      VBtn: {
+        color: 'primary',
+        style: 'min-width: 150px',
+      },
+    },
   })
   app.vueApp.use(vuetify)
 })
