@@ -7,9 +7,10 @@ import {
 import { useApiSnackbar } from '@/stores/ApiSnackbar'
 import type { Product } from '@/types/product'
 
-export const createProduct = async (product: Product) => {
+export const createProduct = async (productData: Record<string, unknown>) => {
   const apiSnackbar = useApiSnackbar()
   try {
+    const product = productData as Product
     const db = getFirestore()
     const productsRef = collection(db, 'products')
     const docRef = doc(productsRef, product.id)

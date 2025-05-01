@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useForm } from 'vee-validate'
 import * as yup from 'yup'
-import { createProduct } from '@/composables/productAPI'
+import { createProduct } from '@/composables/productApi'
 
 const schema = yup.object({
   id: yup.string().required('IDは必須です'),
