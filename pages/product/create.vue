@@ -33,23 +33,31 @@ const onClear = () => {
 </script>
 
 <template>
-  <div>
-    <ProductForm />
-    <div class="d-flex justify-center mt-4">
-      <v-btn
-        class="mr-2"
-        :loading="isLoading"
-        @click="onSubmit"
-      >
-        登録
-      </v-btn>
-      <v-btn
-        color="secondary"
-        :disabled="isLoading"
-        @click="onClear"
-      >
-        クリア
-      </v-btn>
-    </div>
-  </div>
+  <v-card>
+    <v-card-title class="text-primary">
+      珈琲の登録
+    </v-card-title>
+    <v-card-subtitle>
+      珈琲の情報を登録してください
+    </v-card-subtitle>
+    <v-card-item>
+      <ProductForm />
+      <div class="d-flex justify-center mt-4">
+        <v-btn
+          class="mr-2"
+          :loading="isLoading"
+          @click="onSubmit"
+        >
+          登録
+        </v-btn>
+        <v-btn
+          color="secondary"
+          :disabled="isLoading"
+          @click="onClear"
+        >
+          クリア
+        </v-btn>
+      </div>
+    </v-card-item>
+  </v-card>
 </template>
