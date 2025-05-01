@@ -13,13 +13,13 @@ const roastLevels = [
   'イタリアンロースト',
 ]
 
-const id = useField('id')
-const name = useField('name')
-const category = useField('category')
-const roastLevel = useField('roastLevel')
-const volume = useField('volume')
-const price = useField('price')
-const features = useField('features')
+const id = useField<string>('id')
+const name = useField<string>('name')
+const category = useField<string>('category')
+const roastLevel = useField<string>('roast_level')
+const volume = useField<number>('volume')
+const price = useField<number>('price')
+const features = useField<string>('features')
 </script>
 
 <template>
