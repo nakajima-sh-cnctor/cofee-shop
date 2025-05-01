@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useForm } from 'vee-validate'
 import * as yup from 'yup'
-import { createProduct } from '@/composables/productAPI'
+import { createProduct } from '@/composables/productApi'
+import type { Product } from '@/types/product'
 
 const schema = yup.object({
   id: yup.string().required('IDは必須です'),
@@ -19,7 +20,8 @@ const { handleSubmit, resetForm } = useForm({
 
 const onSubmit = handleSubmit(async (values) => {
   console.log(values)
-  const result = await createProduct(values)
+  const product = values as unknown as Product
+  const result = await createProduct(product)
   if (!result.success) {
     console.error('商品作成に失敗しました:', result.error)
   }
