@@ -45,7 +45,9 @@ export default defineNuxtPlugin((app) => {
       },
       VBtn: {
         color: 'primary',
-        style: 'min-width: 150px',
+      },
+      VChip: {
+        color: 'primary',
       },
     },
   })
