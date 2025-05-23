@@ -17,3 +17,13 @@ const apiSnackbar = useApiSnackbar()
     </v-snackbar>
   </v-app>
 </template>
+
+<style>
+:root {
+  font-family: "游ゴシック", YuGothic, "游ゴシック体", "Yu Gothic", sans-serif;
+}
+
+body {
+  font-family: "游ゴシック", YuGothic, "游ゴシック体", "Yu Gothic", sans-serif;
+}
+</style>
