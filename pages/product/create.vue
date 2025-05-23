@@ -44,6 +44,7 @@ const onClear = () => {
       <ProductForm />
       <div class="d-flex justify-center mt-4">
         <v-btn
+          style="width: 150px"
           class="mr-2"
           :loading="isLoading"
           @click="onSubmit"
@@ -51,6 +52,7 @@ const onClear = () => {
           登録
         </v-btn>
         <v-btn
+          style="width: 150px"
           color="secondary"
           :disabled="isLoading"
           @click="onClear"
