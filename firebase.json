@@ -22,7 +22,8 @@
       "port": 9099
     },
     "firestore": {
-      "port": 9090
+      "port": 9090,
+      "dataDir": "./firestore-data"
     },
     "hosting": {
       "port": 5000

@@ -3,14 +3,9 @@ import { useField } from 'vee-validate'
 
 const categories = ['粉', '豆']
 const roastLevels = [
-  'ライトロースト',
-  'シナモンロースト',
-  'ミディアムロースト',
-  'ハイロースト',
-  'シティロースト',
-  'フルシティロースト',
-  'フレンチロースト',
-  'イタリアンロースト',
+  '浅煎り',
+  '中煎り',
+  '深煎り',
 ]
 
 const id = useField<string>('id')
